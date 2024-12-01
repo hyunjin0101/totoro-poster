@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+    <!--상단 메뉴 버튼-->
+    <div class="top-right-menu">
+        <button id="main-button" onclick="toggleDropdown()">메뉴</button>
+        <div id="dropdown-menu">
+          <button class="submenu-button" onclick="clickSubButton(0)">홈</button>
+          <button class="submenu-button" onclick="clickSubButton(1)">이상형 월드컵</button>
+          <button class="submenu-button" onclick="clickSubButton(2)">OST 맞추기</button>
+          <button class="submenu-button" onclick="clickSubButton(3)">캐릭터 맞추기</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <!-- 상단 포스터 html (Top) -->
+        <div class="poster-section">
+            <img id="main-poster" src="sen.jpg" alt="Main Poster">
+            <div class="poster-title" id="main-title">센과 치히로의 행방불명</div>
+            <div class="poster-description" id="main-description">
+                This is a captivating story set in a world of fantasy and adventure. Join the protagonist as they
+                journey through magical landscapes, encounter mystical creatures, and learn valuable lessons about
+                friendship, bravery, and the importance of nature.
+            </div>
+            <div>
+                <a href="https://www.netflix.com/kr/title/60023642?source=35" id="netflix-link" class="movie-link"
+                    target="_blank">넷플릭스</a>
+                <a href="https://www.wavve.com/player/movie?movieid=MV_CR01_DN0000011309&autoplay=y" id="wavve-link"
+                    class="movie-link" target="_blank">웨이브</a>
+                <a href="https://watcha.com/ko-KR/contents/my5YGwO?utm_campaign=metadata&utm_source=google&utm_medium=search"
+                    id="watcha-link" class="movie-link" target="_blank">왓챠</a>
+            </div>
+        </div>
+        <!-- 경계선 -->
+        <div class="divider-horizontal"></div>
+
+        <!-- 캐릭터 소개 html-->
+        <div class="character-container">
+            <div class="character-row">
+                <div class="character-card">
+                    <a href="https://tngodj.github.io/Totoro-Character/" target="_self">
+                    <img src="토토로 4.png" alt="Character 1">
+                    </a>
+                    <div class="character-info">
+                        <a href="https://tngodj.github.io/Totoro-Character/" target="_blank">
+                        <div class="character-name">아펠리오스</div>
+                        <div class="character-role">타곤</div>
+                        자세히</a>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="character2.jpg" alt="Character 2">
+                    <div class="character-info">
+                        <div class="character-name">아우렐리온 솔</div>
+                        <div class="character-role">타곤</div>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="character3.jpg" alt="Character 3">
+                    <div class="character-info">
+                        <div class="character-name">다이애나</div>
+                        <div class="character-role">타곤</div>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="character4.jpg" alt="Character 4">
+                    <div class="character-info">
+                        <div class="character-name">레오나</div>
+                        <div class="character-role">타곤</div>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="character5.jpg" alt="Character 5">
+                    <div class="character-info">
+                        <div class="character-name">판테온</div>
+                        <div class="character-role">타곤</div>
+                    </div>
+                </div>
+            </div>
+            <button class="toggle-button">모두 보기</button>
+            <div class="character-row hidden-row">
+                <div class="character-card">
+                    <img src="character6.jpg" alt="Character 6">
+                    <div class="character-info">
+                        <div class="character-name">룰루</div>
+                        <div class="character-role">요들</div>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="character7.jpg" alt="Character 7">
+                    <div class="character-info">
+                        <div class="character-name">조이</div>
+                        <div class="character-role">요들</div>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="toggle-button">모두 보기</button> -->
+        </div>
+
+        <!-- 경계선 -->
+        <div class="divider-horizontal"></div>
+
+        <!-- 하단 포스터 html -->
+        <div class="coverflow-container bottom-tile">
+            <!-- 스크롤바 -->
+            <div class="scrollbar">
+              <div class="scrollbar-thumb"></div>
+            </div>
+          
+            <!-- 포스터 -->
+            <div class="coverflow">
+              <div class="poster active">
+                <img src="ponyo.jpg" alt="벼랑위의 포뇨">
+              </div>
+              <div class="poster">
+                <img src="laputa.jpg" alt="천공의 성 라퓨타">
+              </div>
+              <div class="poster">
+                <img src="totoro.jpeg" alt="이웃집 토토로">
+              </div>
+              <div class="poster">
+                <img src="cat.jpg" alt="고양이의 보은">
+              </div>
+              <div class="poster">
+                <img src="haul.jpg" alt="하울의 움직이는 성">
+              </div>
+            </div>
+        </div>
+</body>
+<script src="4.js"></script>
+
+</html>
