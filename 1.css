@@ -245,9 +245,10 @@ display: none;
   }
   
   .scrollbar {
-    position: absolute;
-    margin-bottom: 30px;
-    top: 30; /* 스크롤바 위치 */
+    position: relative;
+    margin-bottom: 10px;
+    top: 0px; /* 스크롤바 위치 */
+    bottom: 10px;
     left: 0;
     width: 100%;
     height: 10px;
