@@ -32,6 +32,10 @@ body {
     border: 3px solid #e5d9b9;
 }
 
+a {
+    text-decoration-line: none;
+    color: white;
+}
 /* 상단 우측에 고정된 메뉴 */
 .top-right-menu {
     position: fixed; /* 화면에 고정 */
