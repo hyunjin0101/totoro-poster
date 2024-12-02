@@ -1,7 +1,7 @@
 
 //하단 포스터 링크
 const posterLinks = [
-  'index.html', 
+  '2.html', 
   '3.html', 
   '4.html', 
   '5.html', 
