@@ -1,6 +1,7 @@
+
 //하단 포스터 링크
 const posterLinks = [
-  '2.html', 
+  'index.html', 
   '3.html', 
   '4.html', 
   '5.html', 
@@ -47,7 +48,7 @@ toggleButton.addEventListener('click', () => {
 
   hiddenRows.forEach(row => {
     if (isVisible) {
-      row.style.opacity = '0.0'; // 흐릿하게
+      row.style.opacity = '0.3'; // 흐릿하게
       row.style.pointerEvents = 'none'; // 클릭 방지
     } else {
       row.style.opacity = '1'; // 완전히 보이게
